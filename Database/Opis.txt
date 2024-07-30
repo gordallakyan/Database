@@ -1,0 +1,36 @@
+System bazy danych został zaprojektowany z myślą o efektywnym zarządzaniu zasobami ludzkimi i klientami,
+umożliwiając dokładne śledzenie transakcji i interakcji między klientami a produktami i usługami oferowanymi
+przez firmę. System skupia się na obsłudze i monitorowaniu aktywności klientów oraz pracy i zasobów pracowników,
+co jest kluczowe dla firm działających w dynamicznym środowisku biznesowym.
+
+1.Osoba
+Tabela Osoba jest rdzeniem systemu, przechowującym informacje o wszystkich osobach związanych z działalnością firmy.
+Każda osoba jest unikalnie identyfikowana przez ID i posiada imię  oraz nazwisko.
+
+2.Klienci
+Tabela Klienci przechowuje specyficzne dane klientów, którzy korzystają z usług lub nabywają produkty. 
+Każdy klient jest powiązany z rekordem w tabeli Osoba poprzez Osoba_ID. Tabela ta może być rozszerzona o dodatkowe informacje, 
+takie jak preferencje zakupowe, historię transakcji lub inne dane demograficzne.
+
+3.Pracownicy
+Tabela Pracownicy przechowuje dane dotyczące pracowników firmy, w tym ich wynagrodzenie (Pensja) i kontakt telefoniczny (Numer_telefonu).
+Jest to kluczowe dla zarządzania zasobami ludzkimi, w tym rekrutacji, płac, szkoleń i oceny wydajności.
+
+4.Produkty
+Tabela Produkty zawiera informacje o produktach oferowanych przez firmę, w tym kod produktu (Kod_produktu), 
+cenę oraz stawkę podatku VAT. Jest to fundament zarządzania asortymentem, cenami oraz promocjami i rabatami.
+
+5.Skladniki
+Tabela Skladniki zawiera szczegóły dotyczące składników używanych w produktach, w tym ich ID, Nazwę oraz Kraj Pochodzenia.
+Klienci_Produkty
+
+6.Klienci_Produkty
+tworzy relację między klientami a produktami, pozwalając na śledzenie, które produkty zostały zakupione przez poszczególnych klientów.
+Pracownik_Skladniki
+
+7.Pracownik_Skladniki
+łączy pracowników z konkretnymi składnikami, co może reprezentować ich specjalizacje lub odpowiedzialności za określone surowce.
+Produkty_Skladniki
+
+8.Produkty_Skladniki 
+Stanowi powiązanie między produktami a ich składnikami, co umożliwia identyfikację składów produktów.
